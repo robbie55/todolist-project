@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb://127.0.0.1:27017/todoDB");
+mongoose.connect("mongodb://localhost:27017/todoDB");
 
 const itemsSchema = new mongoose.Schema({
   name: String,
